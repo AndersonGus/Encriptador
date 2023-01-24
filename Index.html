@@ -10,23 +10,29 @@
 </head>
 <body>
     <header>
-       <img class="imagem" src="Vector.jpg" alt="">
+       <img class="imagem" src="Vector.jpg" alt="logoDaAlura">
     </header>
-
+<main>
     <section>
-<ul>
-    <li>
-         <input class="digitar" name="digitar" id="digitar" cols="30" rows="10"></input> 
-    </li>
-    <li> 
-         <input class="result" name="result" id="result" cols="30" rows="10"></input> 
-        </li>
-</ul>
-    </section>
+        <textarea class="text-area" cols="60" rows="12" placeholder="Digite seu texto"></textarea>    
+                
+            <div class="informacao">
+                <h6> Apenas letras minúscula e sem acento.</h6>
+            </div>
+                
+                <div class="botoes">
+                    <button class="btn_criptografar" onclick="btnEncriptar()">criptografar</button>
+                    <button class="btn_descriptografar" onclick="btnDesencriptar()"> descriptografar</button>        
+                </div>
+     </section> 
+     <section>
 
-    <div class="botoes">
-        <button class="criptografar">criptografar</button>
-        <button class="descriptografar"> descriptografar</button>        
-    </div>
+          <textarea class="mensagem" cols="25" rows="16"></textarea> 
+          <button class="btn_copiar" onclick="btnCopiar()"> copiar</button> 
+     </section>
+
+</main>
+    
+   <script src="script.js"> </script>
 </body>
 </html>
